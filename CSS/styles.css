@@ -1,0 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
+/* padding y border dentro del porcentaje */
+
+.bg {
+    background: url('../Imagenes/bg.jpg') ; 
+
+}
