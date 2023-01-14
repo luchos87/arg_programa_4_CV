@@ -7,31 +7,72 @@
     <title>Argentina Programa 4.0 - Proyecto Final</title>
     <link href="CSS/styles.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body class="bg">
-    <div class="container text-center">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+        <div class="container-fluid bg-dark">              
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">...</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Información Personal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Experiencia </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Habilidades</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">       
         <div class="row">
-            <div class="col-4">
+            <div class="col-5 text-center">
                 <img src="" id="imagenPerfil" alt="Error al cargar la imagen de perfil."/>
             </div>
-            <div class="col-8">
-                Datos de perfil
+            <div class="col-7">
+                    <div>
+                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Nombre: </div>
+                        <div class="d-xxl-inline-block col-xxl-6 text-start ladoInfo" id="nombreCompleto"></div>
+                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Edad: </div>
+                        <div class="d-xxl-inline-block col-xxl-2 text-start ladoInfo" id="edad"></div>
+                    </div>
+                    <div>                        
+                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Telefono: </div>
+                        <div class="d-inline-block col-10 text-start ladoInfo" id="telefono"></div>
+                    </div>
+                    <div>
+                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Direccion: </div>
+                        <div class="d-inline-block col-xxl-10 text-start ladoInfo" id="direccion"></div>
+                    </div>
+                    <div>
+                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Email: </div>
+                        <div class="d-inline-block col-xxl-10 text-start ladoInfo" id="email"></div>
+                    </div>
+
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
+            <div class="col-5 text-center">
                 Experiencia
             </div>
-            <div class="col-8">
+            <div class="col-7">
                 ...
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
+            <div class="col-5 text-center">
                 Habilidades
             </div>
-            <div class="col-8">
-                ...
+            <div class="col-7">
+                <div id="habilidades">...</div>
             </div>
         </div>
     </div>

@@ -1,10 +1,32 @@
+/* padding y border dentro del porcentaje */
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
-
-/* padding y border dentro del porcentaje */
 
 .bg {
     background: url('../Imagenes/bg.jpg') ; 
 
+}
+
+.nav-item:hover {
+    background-color: #E9D268;
+}
+
+.nav-item:hover .nav-link{
+    color: black;
+}
+
+.container {
+    padding-top: 20px;;
+}
+
+.ladoDesc {
+    font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+    .ladoInfo {
+        padding-left: 20px;     
+  }
 }
