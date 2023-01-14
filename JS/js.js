@@ -14,4 +14,43 @@ fetch('https://randomuser.me/api/')
         document.getElementById("email").innerHTML = obj.results[0].email;
     });
 
-1
+function sleep(milliseconds) {  
+    return new Promise(resolve => setTimeout(resolve, milliseconds));  
+}  
+
+document.getElementById('btnInfo').addEventListener('click', function() {
+    highlightElement($('#informacion_personal'));
+
+});
+
+document.getElementById('btnHabilidades').addEventListener('click', function() {
+    highlightElement($('#habilidades'));
+
+});
+
+document.getElementById('btnExperiencia').addEventListener('click', function() {
+    highlightElement($('#experiencia'));
+
+});
+
+function highlightElement(element) {
+    const background = $('<div></div>');
+    
+    $(background).css({
+            'position':'relative',
+            'top':'-' + $(element).height() + 'px',
+            'background-color':'#b35cfa',
+            'z-index':'-10',
+            'height':$(element).height() + 'px',
+            'width':$(element).width() + 'px',
+            'margin-bottom':'-' + $(element).height() + 'px',
+            'padding':'0px',
+            'float':'left',
+    });
+
+    $(background).appendTo(element);
+
+    $(background).fadeOut(1000);
+
+    return true;
+};
