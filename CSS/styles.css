@@ -10,7 +10,7 @@
 }
 
 .nav-item:hover {
-    background-color: #E9D268;
+    background-color: #b35cfa;
 }
 
 .nav-item:hover .nav-link{
@@ -18,17 +18,27 @@
 }
 
 .container {
-    padding-top: 20px;;
+    padding-top: 20px;
 }
 
 .ladoDesc {
     font-weight: bold;
 }
 
+.ladoInfo {
+    word-break: break-all;
+}
+
 @media (min-width: 1200px) {
     .ladoInfo {
         padding-left: 20px;     
   }
+
+    .icono {
+        padding-right: 15px; 
+    }
+
+    
 }
 
 #informacion_personal {
@@ -42,3 +52,17 @@
 #habilidades {
     background-color: transparent;
 }
+
+.colInfo {
+    padding-top: 10px;
+}
+
+.colInfo img {
+    padding-bottom:20px;
+}
+
+.icono {
+    padding-right: 10px;
+}
+
+

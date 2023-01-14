@@ -10,11 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg">
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
         <div class="container-fluid bg-dark">              
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" id="menuColapsable" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">...</span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -32,27 +33,34 @@
             </div>
         </div>
     </nav>
-    <div class="container" id="informacion_personal">       
-        <div class="row">
-            <div class="col-5 text-center">
+    <div class="container">       
+        <div class="row" id="informacion_personal">
+            <div class="col-5 text-center colInfo">
                 <img src="" id="imagenPerfil" alt="Error al cargar la imagen de perfil."/>
             </div>
-            <div class="col-7">
+            <div class="col-7 colInfo">
                     <div>
-                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Nombre: </div>
-                        <div class="d-xxl-inline-block col-xxl-6 text-start ladoInfo" id="nombreCompleto"></div>
-                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Edad: </div>
-                        <div class="d-xxl-inline-block col-xxl-2 text-start ladoInfo" id="edad"></div>
+                        <i class="fa-regular fa-address-card icono"></i>
+                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Nombre: </div>                      
+                        <div class="d-inline d-xxl-inline-block col-xxl-6 text-start ladoInfo" id="nombreCompleto"></div>
                     </div>
-                    <div>                        
+                    <div>
+                        <i class="fa-solid fa-cake-candles icono"></i>
+                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Edad: </div>
+                        <div class="d-inline d-xxl-inline-block col-xxl-2 text-start ladoInfo" id="edad"></div>
+                    </div>
+                    <div>                
+                        <i class="fa-solid fa-mobile-screen-button icono"></i>        
                         <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Telefono: </div>
                         <div class="d-inline-block col-10 text-start ladoInfo" id="telefono"></div>
                     </div>
                     <div>
+                        <i class="fa-solid fa-map-location-dot icono"></i>
                         <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Direccion: </div>
                         <div class="d-inline-block col-xxl-10 text-start ladoInfo" id="direccion"></div>
                     </div>
                     <div>
+                        <i class="fa-regular fa-envelope icono"></i>
                         <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Email: </div>
                         <div class="d-inline-block col-xxl-10 text-start ladoInfo" id="email"></div>
                     </div>
@@ -64,7 +72,11 @@
                 Experiencia
             </div>
             <div class="col-7">
-                ...
+                <ul>
+                    <li>Programador web - MadridTech - Junio de 2019 – Actualidad</li>
+                    <li>Programador de aplicaciones - MadridInk - Julio de 2015 – Mayo de 2019</li>
+                    <li>Desarrollador de software - BioWeb - Mayo de 2014 – Junio de 2015</li>
+                </ul>
             </div>
         </div>
         <div class="row" id="habilidades">
@@ -72,7 +84,17 @@
                 Habilidades
             </div>
             <div class="col-7">
-                <div id="habilidades">...</div>
+                <div id="habilidades">
+                    <ul>
+                        <li>Iniciativa</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Liderazgo</li>
+                        <li>Manejo de idiomas</li>
+                        <li>Cursos de formación complementaria</li>
+                        <li>Interrelación con otros</li>
+                        <li>Creatividad</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
