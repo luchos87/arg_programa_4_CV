@@ -18,22 +18,24 @@ function sleep(milliseconds) {
     return new Promise(resolve => setTimeout(resolve, milliseconds));  
 }  
 
-document.getElementById('btnInfo').addEventListener('click', function() {
-    highlightElement($('#informacion_personal'));
+function cerrarMenu() {
     document.getElementById("menuColapsable").classList.add('collapsed');
     document.getElementById("navbarNav").classList.remove('show');
+}
+
+document.getElementById('btnInfo').addEventListener('click', function() {
+    highlightElement($('#informacion_personal'));
+    cerrarMenu()
 });
 
 document.getElementById('btnHabilidades').addEventListener('click', function() {
     highlightElement($('#habilidades'));
-    document.getElementById("menuColapsable").classList.add('collapsed');
-    document.getElementById("navbarNav").classList.remove('show');
+    cerrarMenu()
 });
 
 document.getElementById('btnExperiencia').addEventListener('click', function() {
     highlightElement($('#experiencia'));
-    document.getElementById("menuColapsable").classList.add('collapsed');
-    document.getElementById("navbarNav").classList.remove('show');
+    cerrarMenu()
 });
 
 function highlightElement(element) {
@@ -59,5 +61,35 @@ function highlightElement(element) {
 
     return true;
 };
+
+document.getElementById('trabajo1').addEventListener('click', function() {
+    document.getElementById("mMasTrabajo1").style.display = "block"
+    document.getElementById("trabajo1").style.display = "none"
+});
+
+document.getElementById('trabajo2').addEventListener('click', function() {
+    document.getElementById("mMasTrabajo2").style.display = "block"
+    document.getElementById("trabajo2").style.display = "none"
+});
+
+document.getElementById('trabajo3').addEventListener('click', function() {
+    document.getElementById("mMasTrabajo3").style.display = "block"
+    document.getElementById("trabajo3").style.display = "none"
+});
+
+document.getElementById('trabajo1menos').addEventListener('click', function() {
+    document.getElementById("mMasTrabajo1").style.display = "none"
+    document.getElementById("trabajo1").style.display = "block"
+});
+
+document.getElementById('trabajo2menos').addEventListener('click', function() {
+    document.getElementById("mMasTrabajo2").style.display = "none"
+    document.getElementById("trabajo2").style.display = "block"
+});
+
+document.getElementById('trabajo3menos').addEventListener('click', function() {
+    document.getElementById("mMasTrabajo3").style.display = "none"
+    document.getElementById("trabajo3").style.display = "block"
+});
 
 

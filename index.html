@@ -13,7 +13,7 @@
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top" data-bs-theme="dark">
         <div class="container-fluid bg-dark">              
             <button class="navbar-toggler" id="menuColapsable" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">...</span>
@@ -21,82 +21,115 @@
             <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" id="btnInfo">Información Personal</a>
+                    <a class="nav-link" id="btnInfo" href="#info">Información Personal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="btnExperiencia">Experiencia </a>
+                    <a class="nav-link" id="btnExperiencia" href="#exp">Experiencia </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="btnHabilidades">Habilidades</a>
+                    <a class="nav-link" id="btnHabilidades" href="#hab">Habilidades</a>
                 </li>
             </ul>
             </div>
         </div>
-    </nav>
-    <div class="container">       
-        <div class="row" id="informacion_personal">
-            <div class="col-5 text-center colInfo">
-                <img src="" id="imagenPerfil" alt="Error al cargar la imagen de perfil."/>
-            </div>
-            <div class="col-7 colInfo">
-                    <div>
-                        <i class="fa-regular fa-address-card icono"></i>
-                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Nombre: </div>                      
-                        <div class="d-inline d-xxl-inline-block col-xxl-6 text-start ladoInfo" id="nombreCompleto"></div>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-cake-candles icono"></i>
-                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Edad: </div>
-                        <div class="d-inline d-xxl-inline-block col-xxl-2 text-start ladoInfo" id="edad"></div>
-                    </div>
-                    <div>                
-                        <i class="fa-solid fa-mobile-screen-button icono"></i>        
-                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Telefono: </div>
-                        <div class="d-inline-block col-10 text-start ladoInfo" id="telefono"></div>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-map-location-dot icono"></i>
-                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Direccion: </div>
-                        <div class="d-inline-block col-xxl-10 text-start ladoInfo" id="direccion"></div>
-                    </div>
-                    <div>
-                        <i class="fa-regular fa-envelope icono"></i>
-                        <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Email: </div>
-                        <div class="d-inline-block col-xxl-10 text-start ladoInfo" id="email"></div>
-                    </div>
+    </nav>    
+    <div class="container">     
+        <section id="info">
+            <div class="row" id="informacion_personal">
+                <div class="col-5 text-center colInfo">
+                    <img src="" id="imagenPerfil" alt="Error al cargar la imagen de perfil."/>
+                </div>
+                <div class="col-7 colInfo">
+                        <div>
+                            <i class="fa-regular fa-address-card fa-fw icono"></i>
+                            <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Nombre: </div>                      
+                            <div class="d-inline d-xxl-inline-block col-xxl-6 text-start ladoInfo" id="nombreCompleto"></div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-cake-candles fa-fw icono"></i>
+                            <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Edad: </div>
+                            <div class="d-inline d-xxl-inline-block col-xxl-2 text-start ladoInfo" id="edad"></div>
+                        </div>
+                        <div>                
+                            <i class="fa-solid fa-mobile-screen-button fa-fw icono"></i>        
+                            <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Telefono: </div>
+                            <div class="d-inline-block col-xxl-10 text-start ladoInfo" id="telefono"></div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-map-location-dot fa-fw icono"></i>
+                            <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Direccion: </div>
+                            <div class="d-inline-block col-xxl-10 text-start ladoInfo" id="direccion"></div>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-envelope fa-fw icono"></i>
+                            <div class="d-none d-xxl-inline-block col-1 text-start ladoDesc">Email: </div>
+                            <div class="d-inline-block col-xxl-10 text-start ladoInfo" id="email"></div>
+                        </div>
 
+                </div>
             </div>
-        </div>
-        <div class="row" id="experiencia">
-            <div class="col-5 text-center">
-                Experiencia
-            </div>
-            <div class="col-7">
-                <ul>
-                    <li>Programador web - MadridTech - Junio de 2019 – Actualidad</li>
-                    <li>Programador de aplicaciones - MadridInk - Julio de 2015 – Mayo de 2019</li>
-                    <li>Desarrollador de software - BioWeb - Mayo de 2014 – Junio de 2015</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row" id="habilidades">
-            <div class="col-5 text-center">
-                Habilidades
-            </div>
-            <div class="col-7">
-                <div id="habilidades">
+        </section>
+        <section id="exp">
+            <div class="row" id="experiencia">
+                <div class="col-5 text-center">
+                    Experiencia
+                </div>
+                <div class="col-7">
                     <ul>
-                        <li>Iniciativa</li>
-                        <li>Trabajo en equipo</li>
-                        <li>Liderazgo</li>
-                        <li>Manejo de idiomas</li>
-                        <li>Cursos de formación complementaria</li>
-                        <li>Interrelación con otros</li>
-                        <li>Creatividad</li>
+                        <li>Programador web - MadridTech - Junio de 2019 - Actualidad.  <span class="mMas" id="trabajo1">Mostrar Mas..</span>
+                            <div id="mMasTrabajo1">
+                                <ul>
+                                    <li>Encargado del departamento de programación</li>
+                                    <li>Jefe del departamento de investigación</li>
+                                    <li>Desarrollo de más de 12 apps para teléfonos móviles</li>
+                                    <li>Aumento del rendimiento web en un 34%</li><span class="mMas" id="trabajo1menos">Mostrar Menos..</span>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>Programador de aplicaciones - MadridInk - Julio de 2015 - Mayo de 2019.  <span class="mMas" id="trabajo2">Mostrar Mas..</span>
+                            <div id="mMasTrabajo2">
+                                <ul>
+                                    <li>Supervisor del área de desarrollo de apps</li>
+                                    <li>Salida al mercado de más de 8 aplicaciones para restaurantes</li>
+                                    <li>Automatización de servicios para hoteles</li>
+                                    <li>Capacitación a nuevos programadores</li><span class="mMas" id="trabajo2menos">Mostrar Menos..</span>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>Desarrollador de software - BioWeb - Mayo de 2014 - Junio de 2015.  <span class="mMas" id="trabajo3">Mostrar Mas..</span>
+                            <div id="mMasTrabajo3">
+                                <ul>
+                                    <li>Creador de la página web de la empresa</li>
+                                    <li>Captación de más de 1200 clientes en un tiempo inferior a un año</li>
+                                    <li>Implementación de tienda online</li>
+                                    <li>Automatización de redes sociales</li><span class="mMas" id="trabajo3menos">Mostrar Menos..</span>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
+        <section id="hab">
+            <div class="row" id="habilidades">
+                <div class="col-5 text-center">
+                    Habilidades
+                </div>
+                <div class="col-7">
+                    <div id="habilidades">
+                        <ul>
+                            <li>Iniciativa</li>
+                            <li>Trabajo en equipo</li>
+                            <li>Liderazgo</li>
+                            <li>Manejo de idiomas</li>
+                            <li>Cursos de formación complementaria</li>
+                            <li>Interrelación con otros</li>
+                            <li>Creatividad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <script src="JS/js.js"></script>

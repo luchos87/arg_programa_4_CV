@@ -11,14 +11,15 @@
 
 .nav-item:hover {
     background-color: #b35cfa;
+    cursor: pointer;
 }
 
 .nav-item:hover .nav-link{
-    color: black;
+    color: white;
 }
 
 .container {
-    padding-top: 20px;
+    padding-top: 80px;
 }
 
 .ladoDesc {
@@ -32,13 +33,11 @@
 @media (min-width: 1200px) {
     .ladoInfo {
         padding-left: 20px;     
-  }
+    }
 
     .icono {
         padding-right: 15px; 
-    }
-
-    
+    }    
 }
 
 #informacion_personal {
@@ -62,7 +61,25 @@
 }
 
 .icono {
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
+.mMas {
+    color: blue;
+    text-decoration: underline blue; 
+    cursor: pointer;
+    display: block;
+}
+
+#mMasTrabajo1 {
+    display: none;
+}
+
+#mMasTrabajo2 {
+    display: none;
+}
+
+#mMasTrabajo3 {
+    display: none;
+}
 
